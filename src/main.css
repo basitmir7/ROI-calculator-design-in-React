@@ -1,0 +1,181 @@
+.main {
+  width: 33%;
+  height: auto;
+
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.sec {
+  background: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+}
+.cal-header h3 {
+  font-size: 23px;
+
+  padding: 6px;
+  margin: 0;
+}
+.cal-btns {
+  float: right;
+  display: flex;
+  margin-right: 9px;
+  font-weight: 600;
+  color: grey;
+}
+.pic {
+  background: url("./assets/cake.jpg");
+  height: 17px;
+
+  width: 17px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-top: 2px;
+
+  background-size: contain;
+}
+
+.cal-input {
+  margin-top: 26px;
+}
+.cal-input input {
+  width: 96%;
+  font-size: 26px;
+  padding: 5px;
+  border: 2px solid #80808059;
+  border-radius: 9px;
+  background: #f1f1f1;
+  height: 40px;
+}
+.cal-dollar {
+  display: flex;
+}
+.cal-dollar p {
+  margin: 0;
+  display: block;
+  padding: 5px 12px 5px 12px;
+  background: #f1f1f1;
+  height: 20px;
+  width: 50px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.time-days {
+  display: flex;
+  margin-top: 9px;
+}
+.days {
+  margin: 0;
+  display: block;
+  padding: 8px 13px 8px 13px;
+  background: #f1f1f1;
+  height: 20px;
+  width: 65px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 18px;
+  margin-top: 4px;
+  font-weight: bold;
+  margin-left: 6px;
+  color: grey;
+}
+.time-frame {
+  font-weight: 700;
+  margin-top: 14px;
+  margin-left: 4px;
+}
+.apy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.apy .apy-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 6px;
+  margin-left: 3px;
+}
+.tier {
+  display: flex;
+}
+.tier .tier-list {
+  margin: 0;
+  display: block;
+  padding: 8px 13px 8px 13px;
+  background: #f1f1f1;
+  height: 20px;
+  width: 65px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 18px;
+  margin-top: 4px;
+  font-weight: bold;
+  margin-left: 6px;
+  color: grey;
+}
+.tier-p {
+  margin: 6px;
+  font-weight: 700;
+  color: rgb(160, 160, 160);
+}
+.section-3 input {
+  width: 96%;
+  font-size: 26px;
+  padding: 5px;
+  border: 2px solid #80808059;
+  border-radius: 9px;
+  background: #f1f1f1;
+  height: 40px;
+}
+
+.section-3 p {
+  color: rgb(158, 158, 158);
+  margin: 0;
+  margin: 4px;
+  font-weight: bold;
+
+  /* float: right; */
+}
+#upper-text {
+  float: right;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+#lower-text {
+  float: right;
+  font-size: 13px;
+}
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-apply,
+.btn-cancle {
+  width: 46%;
+  font-size: 13px;
+  padding: 9px;
+
+  border: none;
+  border-radius: 12px;
+}
+.btn-apply {
+  background: rgb(58, 58, 58);
+  color: white;
+}
+.btn-cancle {
+  outline: 0.7px solid rgba(110, 110, 110, 0.863);
+  background: rgb(255, 254, 254);
+}
