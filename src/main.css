@@ -75,6 +75,7 @@
 .time-days {
   display: flex;
   margin-top: 9px;
+  flex-wrap: wrap;
 }
 .days {
   margin: 0;
@@ -109,6 +110,7 @@
 }
 .tier {
   display: flex;
+  flex-wrap: wrap;
 }
 .tier .tier-list {
   margin: 0;
@@ -178,4 +180,10 @@
 .btn-cancle {
   outline: 0.7px solid rgba(110, 110, 110, 0.863);
   background: rgb(255, 254, 254);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 75%;
+  }
 }
