@@ -1,5 +1,4 @@
 .App {
-<<<<<<< HEAD
   display: block;
   height: auto;
   width: 100%;
@@ -8,14 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-=======
+
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
->>>>>>> 793e072 (Initialize project using Create React App)
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,8 +22,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -37,7 +33,6 @@
   color: white;
 }
 
->>>>>>> 793e072 (Initialize project using Create React App)
 .App-link {
   color: #61dafb;
 }
