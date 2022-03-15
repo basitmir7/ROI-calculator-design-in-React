@@ -2,9 +2,38 @@ import "./main.css";
 import { CgClose } from "react-icons/cg";
 import { BsToggleOn } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
-
+import { useState } from "react";
+import ShowContent from "./showContent";
 
 function Main() {
+  const [Contentcomponent, toggleShowContent] = ShowContent(
+    <div className="sec section-4" id="footer">
+      <div className="foo footer-head" style={{ display: "flex" }}>
+        <p style={{ fontWeight: "700" }}>APY</p>{" "}
+        <p
+          style={{
+            marginLeft: "auto",
+            fontSize: "17px",
+            fontWeight: "bold",
+            color: "rgb(238, 205, 18)",
+          }}
+        >
+          63.3 %
+        </p>
+      </div>
+      <ul
+        className="foo footer-body"
+        style={{ padding: "11px", color: "rgb(137, 137, 137)" }}
+      >
+        <li>calculated based on current rates</li>
+        <li>
+          All figures are estimates provided for your convenience only, and by
+          no means represent guarenteed results
+        </li>
+      </ul>
+    </div>,
+    true
+  );
   return (
     <div className="main">
       <div className="sec section-1">
@@ -45,7 +74,9 @@ function Main() {
         </div>
       </div>
       <div className="sec section-2">
-        <div className="time-frame">time frame</div>
+        <div className="time-frame" style={{ textAlign: "initial" }}>
+          time frame
+        </div>
         <div className="time-days">
           <div
             className="days"
@@ -104,8 +135,9 @@ function Main() {
         className="detailsBtn"
         id="detail-Btn"
         style={{ textAlign: "center", fontWeight: "bold" }}
+        onClick={toggleShowContent}
       >
-        Hide details{" "}
+        Show details{" "}
         <IoIosArrowUp
           style={{
             marginTop: "9px",
@@ -114,7 +146,10 @@ function Main() {
         />
       </div>
 
-      <div className="sec section-4" id="footer"></div>
+      {/* <div className="sec section-4" id="footer">
+        
+      </div> */}
+      {Contentcomponent}
     </div>
   );
 }
