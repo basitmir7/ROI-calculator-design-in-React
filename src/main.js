@@ -2,7 +2,7 @@ import "./main.css";
 import { CgClose } from "react-icons/cg";
 import { BsToggleOn } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
-import { useState } from "react";
+// import { useState } from "react";
 import ShowContent from "./showContent";
 
 function Main() {
